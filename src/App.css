@@ -15,7 +15,6 @@ h1 {
   text-align: center;
   font-size: 36px;
   letter-spacing: 0.1em;
-
 }
 
 .container, .container-full {
@@ -28,11 +27,6 @@ h1 {
   width: 100%;
 }
 
-.gradient {
-  background: linear-gradient(180deg, rgba(220, 36, 36, 0) 0%, #000000 100%);
-  position: absolute;
-}
-
 h2 {
   font-family: 'Martel-regular';
   width: 60%;
@@ -40,5 +34,3 @@ h2 {
   font-size: 22px;
   letter-spacing: 0.1em;
 }
-
-

@@ -17,4 +17,3 @@ const BlackBg4 = styled.div`
   height: 20vh;
   align-items: center;
 `;
-

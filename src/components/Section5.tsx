@@ -4,20 +4,22 @@ import womanBuilding from '../assets/images/woman-building.jpg'
 
 function Section5() {
   return (
-    <Bg className='container'>
+    <Align className='container'>
       <CenterText>"Lorem ipsum dolor sit aa. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
       oris nisi ut aliquip ex ea commodo consequa"Lorem ipsum
       dolor sit aa. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
       <By>Begin Meditating Today...</By>
       </CenterText>
+      <Gradient></Gradient>
       <Img src={womanBuilding} alt="image" />
-    </Bg>
+      <GradientBot></GradientBot>
+    </Align>
   )
 }
 
 export default Section5
 
-const Bg = styled.div`
+const Align = styled.div`
   align-items: center;
 `;
 
@@ -26,7 +28,25 @@ const Img = styled.img`
   width: 100%;
   object-fit: cover;
   object-position: 50% 70%;
-  
+  opacity: 35%
+`;
+
+const Gradient = styled.div`
+  position: absolute;
+  width: 1433px;
+  height: 390px;
+  left: -7px;
+  top: 0px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 92.33%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+`;
+
+const GradientBot = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 428px;
+  bottom: 0px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 92.33%);
 `;
 
 const By = styled.h1`
@@ -40,5 +60,4 @@ const CenterText = styled.h1`
   color: #D4D4D4;
   width: 60%;
   font-size: 22px;
-  letter-spacing: 0.1em;
 `;

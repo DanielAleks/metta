@@ -4,12 +4,18 @@ import womenMountain from '../assets/images/woman-mountian.jpg'
 
 function Section1() {
   return (
-    <div className= 'container-full'>
+    <div className='container-full'>
       <HeaderText>
         “To understand the immeasurable, the mind must be extraordinarily quiet, still.”
         <By>- Jiddu Krishnamurti </By>
       </HeaderText>
-      <Img src={womenMountain} alt="img"/>
+      <div >
+        
+        <Gradient></Gradient>
+
+        <Img src={womenMountain} alt="img" />
+
+      </div>
     </div>
   )
 }
@@ -21,9 +27,22 @@ const Img = styled.img`
   width: 100%;
   object-fit: cover;
   object-position: 50% 70%;
-    
-    
 `;
+
+const Gradient = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 154px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+`;
+
+const Div = styled.div`
+
+`;
+
 
 const HeaderText = styled.h1`
   position: absolute;
@@ -35,6 +54,6 @@ const By = styled.div`
   font-size: 20px;
   text-align: end;
 `;
-  
+
 
 

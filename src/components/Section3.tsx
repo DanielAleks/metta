@@ -1,24 +1,40 @@
 import React from 'react'
 import styled from 'styled-components';
-import forestBg from '../assets/images/forest-bg.jpg'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import SimpleSlider from './Slixk';
 
 function Section3() {
   return (
     <div className='container'>
-      <Gradient></Gradient>
-      <Img src={forestBg} alt="image" />
-      <GradientBot></GradientBot>
 
+      <div className='forestBg '>
+        
+        <Gradient></Gradient>
+        <GradientBot></GradientBot>
+        <Slider>
+        hihihihihih
+        <SimpleSlider />
+        </Slider>
+
+
+      </div>
     </div>
   )
 }
 
 export default Section3
 
+const LargeBg = styled.div`
+
+`;
+
+const Slider = styled.div`
+  top: 0px;
+`;
+
 const Img = styled.img`
-  height: 100vh;
-  width: 100%;
-  object-fit: cover;
+ 
 `;
 
 const Gradient = styled.div`

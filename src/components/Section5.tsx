@@ -10,8 +10,8 @@ function Section5() {
       dolor sit aa. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
       <By>Begin Meditating Today...</By>
       </CenterText>
-      <Gradient></Gradient>
       <Img src={womanBuilding} alt="image" />
+      <Gradient></Gradient>
       <GradientBot></GradientBot>
     </Align>
   )
@@ -33,9 +33,8 @@ const Img = styled.img`
 
 const Gradient = styled.div`
   position: absolute;
-  width: 1433px;
+  width: 100%;
   height: 390px;
-  left: -7px;
   top: 0px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 92.33%);
   transform: matrix(1, 0, 0, -1, 0, 0);

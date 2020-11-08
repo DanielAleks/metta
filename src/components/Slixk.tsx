@@ -15,8 +15,15 @@ export default function SimpleSlider() {
   return (
     <Slider {...settings}>
       <div>
-        <h1>1kljhgfdghjkljhgfdfghjklkjhgf</h1>
+        <h1>1kjhgfdfghjklkjhgf</h1>
       </div>
+      <div>
+        <h1>hihihih</h1>
+      </div>
+      <div>
+        <h1>kdlsjfhdshdsjfkhasdkfjhlasjkfhasjdklfhsafkjhdsajflhsafjkhsdakflhsdfjkahsdfkjlh</h1>
+      </div>
+ 
     </Slider>
   );
 }

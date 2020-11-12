@@ -5,12 +5,12 @@ import womanBuilding from '../assets/images/woman-building.jpg'
 function Section5() {
   return (
     <Align className='container'>
+      <div className='buildingBg'></div>
       <CenterText>"Lorem ipsum dolor sit aa. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
       oris nisi ut aliquip ex ea commodo consequa"Lorem ipsum
       dolor sit aa. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
       <By>Begin Meditating Today...</By>
       </CenterText>
-      <Img src={womanBuilding} alt="image" />
       <Gradient></Gradient>
       <GradientBot></GradientBot>
     </Align>
@@ -23,13 +23,14 @@ const Align = styled.div`
   align-items: center;
 `;
 
-const Img = styled.img`
- height: 100vh;
-  width: 100%;
-  object-fit: cover;
-  object-position: 50% 70%;
-  opacity: 35%
-`;
+// const Img = styled.img`
+//   height: 100vh;
+//   width: 100%;
+//   object-fit: cover;
+//   object-position: 50% 70%;
+//   opacity: 35%;
+//   background-image:
+// `;
 
 const Gradient = styled.div`
   position: absolute;
@@ -48,15 +49,15 @@ const GradientBot = styled.div`
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 92.33%);
 `;
 
-const By = styled.h1`
+const By = styled.h3`
 font-size: 25px;
 color: #D4D4D4;
-text-align: end
+text-align: end;
+padding: 10px 50px 0px 0px;
 `;
 
-const CenterText = styled.h1`
+const CenterText = styled.h2`
   position: absolute;
   color: #D4D4D4;
-  width: 60%;
-  font-size: 22px;
+    
 `;

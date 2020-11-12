@@ -21,9 +21,8 @@ const BlackBg = styled.div`
   
 `;
 
-const CenterText = styled.h1  `
+const CenterText = styled.h2  `
   color: #C9CAC5;
-  font-size: 22px;
   width: 60%;
   text-align: center;
 `;

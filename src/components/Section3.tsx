@@ -3,23 +3,27 @@ import styled from 'styled-components';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SimpleSlider from './Slixk';
+import Cards from './Cards';
 
 function Section3() {
   return (
     <div className='container'>
 
       <div className='forestBg '>
-        
         <Gradient></Gradient>
         <GradientBot></GradientBot>
-        <Slider>
-        hihihihihih
-        <SimpleSlider />
-        </Slider>
+
+        <div className='show-on-mobile'>
+            <SimpleSlider slidesToShow={1} />
+        </div>
+
+        <div className="show-on-desktop">
+            <SimpleSlider slidesToShow={3}  />
+        </div>
 
 
-      </div>
     </div>
+    </div >
   )
 }
 
@@ -29,8 +33,11 @@ const LargeBg = styled.div`
 
 `;
 
-const Slider = styled.div`
-  top: 0px;
+const SliderContainer = styled.div`
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  height: 100%;
 `;
 
 const Img = styled.img`

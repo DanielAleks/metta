@@ -5,10 +5,11 @@ import womenMountain from '../assets/images/woman-mountian.jpg'
 function Section1() {
   return (
     <div className='container-full'>
-      <HeaderText>
+
+      <h1 className='headerText'>
         “To understand the immeasurable, the mind must be extraordinarily quiet, still.”
-        <By>- Jiddu Krishnamurti </By>
-      </HeaderText>
+        <h3>- Jiddu Krishnamurti </h3>
+      </h1>
       <div >
         
         <Gradient></Gradient>
@@ -39,19 +40,7 @@ const Gradient = styled.div`
   bottom: 0px;
 `;
 
-const Div = styled.div`
-
-`;
-
-
-const HeaderText = styled.h1`
-  position: absolute;
-  margin-top: 5%;
-
-`;
-
-const By = styled.div`
-  font-size: 20px;
+const By = styled.h4`
   text-align: end;
 `;
 

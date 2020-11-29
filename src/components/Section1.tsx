@@ -35,13 +35,7 @@ const Gradient = styled.div`
   width: 100%;
   height: 154px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
-  align-items: center;
-  justify-content: center;
   bottom: 0px;
-`;
-
-const By = styled.h4`
-  text-align: end;
 `;
 
 

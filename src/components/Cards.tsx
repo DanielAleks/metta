@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components';
-import flowerCard from '../assets/images/flower-card.jpg'
 
 
 

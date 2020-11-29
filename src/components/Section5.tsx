@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import womanBuilding from '../assets/images/woman-building.jpg'
 
 function Section5() {
   return (

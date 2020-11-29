@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SimpleSlider from './Slixk';
-import Cards from './Cards';
 
 function Section3() {
   return (
@@ -28,22 +27,6 @@ function Section3() {
 }
 
 export default Section3
-
-const LargeBg = styled.div`
-
-`;
-
-const SliderContainer = styled.div`
-  display: flex;
-  justify-content:center;
-  align-items:center;
-  height: 100%;
-`;
-
-const Img = styled.img`
- 
-`;
-
 const Gradient = styled.div`
   position: absolute;
   width: 100%;

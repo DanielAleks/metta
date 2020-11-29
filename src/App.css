@@ -20,16 +20,6 @@ h1 {
   letter-spacing: 0.1em;
 }
 
-.container, .container-full {
-  display: flex;
-  position: relative;
-  justify-content: center;
-}
-
-.container-full {
-  width: 100%;
-}
-
 h2 {
   font-family: 'Martel-regular';
   width: 60%;
@@ -54,6 +44,16 @@ h3 {
   background-size: cover;
   opacity: 80%;
   background-position: center;
+}
+
+.container, .container-full {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.container-full {
+  width: 100%;
 }
 
 .sliderrrr {

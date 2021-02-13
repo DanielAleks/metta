@@ -2,10 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
-import styled from "styled-components";
 import Cards from "./Cards";
 import { card1, card2, card3, card4, card5, card6, card7, card8, card9 } from "../App";
-import { NONAME } from "dns";
 
 export default function SimpleSlider({ slidesToShow }) {
 

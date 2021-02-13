@@ -11,10 +11,11 @@
 
 ::-webkit-scrollbar {
     width: 0px;
-     /* make scrollbar transparent */
 }
 
+
 html {
+  scrollbar-width: none;
   background: black
 }
 

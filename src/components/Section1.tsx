@@ -25,7 +25,8 @@ export default Section1
 
 const Img = styled.img`
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+  max-width:100%; 
   object-fit: cover;
   object-position: 50% 70%;
 `;
@@ -34,6 +35,7 @@ const Gradient = styled.div`
   position: absolute;
   width: 100%;
   height: 154px;
+  left: 0px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
   bottom: 0px;
 `;

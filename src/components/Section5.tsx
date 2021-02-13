@@ -16,7 +16,7 @@ function Section5() {
       <Gradient></Gradient>
       <GradientBot></GradientBot>
     </Align>
-  )
+  ) 
 }
 
 export default Section5

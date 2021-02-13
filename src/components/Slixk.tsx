@@ -25,10 +25,10 @@ export default function SimpleSlider({ slidesToShow }) {
     dots: false,
     infinite: true,
     speed: 1500,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 3000,
     slidesToShow,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
   };
 
   return (

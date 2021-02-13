@@ -7,10 +7,11 @@ function Section5() {
   return (
     <Align className='container'>
       <div className='buildingBg'></div>
-      <CenterText data-aos="fade-down" data-aos-once="true" >"Lorem ipsum dolor sit aa. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
-      oris nisi ut aliquip ex ea commodo consequa"Lorem ipsum
-      dolor sit aa. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
-      <By>Begin Meditating Today...</By>
+      <CenterText data-aos="fade-down" data-aos-once="true" >
+        To get to know who you truly are and not just be wandering in life, you must take the time to
+        understand yourself in solitude just like you would with your loved ones.
+        Meditation is not running away, rather comfronting your inner demons.
+      <By>Wasn't the darkness nice...</By>
       </CenterText>
       <Gradient></Gradient>
       <GradientBot></GradientBot>

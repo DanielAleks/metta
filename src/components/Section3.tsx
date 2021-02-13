@@ -18,6 +18,10 @@ function Section3() {
           <SimpleSlider slidesToShow={1} />
         </div>
 
+        <div className='show-on-tablet'>
+          <SimpleSlider slidesToShow={2} />
+        </div>
+
         <div className="show-on-desktop">
           <SimpleSlider slidesToShow={3} />
         </div>

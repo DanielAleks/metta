@@ -47,7 +47,7 @@ const Img = styled.img`
 const Title = styled.h2`
   width: 100%;
   overflow: hidden;
-  margin-bottom: -5px;
+  margin-bottom: 5px;
   font-family: Marlow-bold;
   font-size: 25px
 `;

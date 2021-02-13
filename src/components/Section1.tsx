@@ -1,21 +1,21 @@
 import React from 'react'
 import styled from 'styled-components';
 import womenMountain from '../assets/images/woman-mountian.jpg'
+import Aos from 'aos';
 
 function Section1() {
+  Aos.init()
   return (
-    <div className='container-full'>
+    <div className='container-full' >
 
-      <h1 className='headerText'>
+      <h1 className='headerText' >
         “To understand the immeasurable, the mind must be extraordinarily quiet, still.”
-        <h3>- Jiddu Krishnamurti </h3>
+      <h3 className='authorHeader'>- Jiddu Krishnamurti </h3>
       </h1>
       <div >
-        
+
         <Gradient></Gradient>
-
         <Img src={womenMountain} alt="img" />
-
       </div>
     </div>
   )

@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components';
+import Aos from 'aos';
 
 function Section5() {
+  Aos.init()
   return (
     <Align className='container'>
       <div className='buildingBg'></div>
-      <CenterText>"Lorem ipsum dolor sit aa. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
+      <CenterText data-aos="fade-down" data-aos-once="true" >"Lorem ipsum dolor sit aa. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab
       oris nisi ut aliquip ex ea commodo consequa"Lorem ipsum
       dolor sit aa. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
       <By>Begin Meditating Today...</By>

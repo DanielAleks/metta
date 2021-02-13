@@ -3,25 +3,25 @@ import styled from 'styled-components';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SimpleSlider from './Slixk';
+import Aos from 'aos';
 
 function Section3() {
+  Aos.init()
+
   return (
     <div className='container'>
-
       <div className='forestBg '>
         <Gradient></Gradient>
         <GradientBot></GradientBot>
 
         <div className='show-on-mobile'>
-            <SimpleSlider slidesToShow={1} />
+          <SimpleSlider slidesToShow={1} />
         </div>
 
         <div className="show-on-desktop">
-            <SimpleSlider slidesToShow={3}  />
+          <SimpleSlider slidesToShow={3} />
         </div>
-
-
-    </div>
+      </div>
     </div >
   )
 }

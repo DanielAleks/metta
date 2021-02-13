@@ -20,8 +20,8 @@ function Cards({ cardProps }: cardsT) {
       <Img src={cardProps.img } alt="image" />
       <FrontBg>
 
-          <h2>{cardProps.title}</h2>
-          <h4>{cardProps.description}</h4>
+          <Title>{cardProps.title}</Title>
+          <Description>{cardProps.description}</Description>
       </FrontBg>
     </Component>
   )
@@ -38,17 +38,30 @@ const Component = styled.div`
 `;
 
 const Img = styled.img`
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    border-radius: 30px 30px 0px 0px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  border-radius: 30px 30px 0px 0px;
+`;
 
+const Title = styled.h2`
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -5px;
+  font-family: Marlow-bold;
+  font-size: 25px
+`;
+
+const Description = styled.h4`
+  width: 100%;
+  overflow: hidden;
+  color: #b4b2b2
 `;
 
 const FrontBg = styled.div`
   background: #3F4039;
   width: 100%;
-  height: 220px;
+  height: 60%;
   bottom: 0px;
   position: absolute;
   z-index: 2;

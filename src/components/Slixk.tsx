@@ -20,17 +20,15 @@ export default function SimpleSlider({ slidesToShow }) {
     <Cards cardProps={card9} />
   ]
 
-
-
   var settings = {
     arrows: false,
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 1500,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 1000,
     slidesToShow,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
   };
 
   return (
@@ -47,7 +45,6 @@ export default function SimpleSlider({ slidesToShow }) {
             </div>
           </div>
         )}
-
 
       </Slider>
     </div>

@@ -1,14 +1,21 @@
+/* @import '../node_modules/bulma/bulma.sass'; */
+
 @font-face {
   font-family: 'Martel-bold';
   src: local('Martel-bold'), url('./assets/fonts/Martel-Bold.ttf') format('trueType');
 }
-
-
-
+@font-face {
+  font-family: 'Martel-regular';
+  src: local('Martel-light'), url('./assets/fonts/Martel-ExtraLight.ttf') format('trueType');
+}
 
 ::-webkit-scrollbar {
     width: 0px;
      /* make scrollbar transparent */
+}
+
+html {
+  background: black
 }
 
 h1 {
@@ -23,8 +30,9 @@ h1 {
 h2 {
   font-family: 'Martel-regular';
   width: 60%;
+  font-weight: 100;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 0.1em;
   color: #FFFFFF;
 }
@@ -33,6 +41,7 @@ h3 {
   font-family: 'Martel-regular';
   text-align: end;
   font-size: 22px;
+  font-weight: 100;
   letter-spacing: 0.1em;
   margin-right: 50px;
 }
@@ -50,6 +59,13 @@ h3 {
   display: flex;
   position: relative;
   justify-content: center;
+}
+
+.section2-bg {
+  background: black;
+  height: 50vh;
+  width: 100%;
+  align-items: center;
 }
 
 .container-full {
@@ -70,7 +86,7 @@ h3 {
 
 .cardContainerInner {
   width: 50%;
-  height: 500px;
+  height: 600px;
   display: flex;
   justify-content: center;
 }
@@ -87,8 +103,45 @@ h3 {
 .headerText {
   position: absolute;
   margin-top: 5%;
+  color: #525252;
+  animation: .8s ease-out 0s 1 slideInFromLeft;
 }
 
+.authorHeader {
+  color: #616161;
+  font-family: Martel-bold;
+  animation: 1s ease-out 0s 1 slideInFromLeftAuthor;
+}
+
+@keyframes slideInFromLeft {
+  0% {transform: translateX(-150%) skewX(20deg);}
+  90% {transform: translateX(1%);}
+  100% {transform: translateX(0) skewX(0deg);}
+}
+@keyframes slideInFromLeftAuthor {
+  0% {transform: translateX(-150%) skewX(20deg);}
+  90% {transform: translateX(1%);}
+  100% {transform: translateX(0) skewX(0deg);}
+}
+
+@keyframes slideInFromRight {
+  0% {transform: translateX(150%);}
+  100% {transform: translateX(0);}
+}
+
+@keyframes FadeIn {
+  0% {filter: opacity(0%);}
+  100% {filter: opacity(100%);}
+}
+
+.section2-text {
+  color: #C9CAC5;
+  width: 60%;
+  font-size: 22px;
+  text-align: center;
+  animation: 1s ease-out 0s 1 FadeIn;
+}
+  
 h4 {
   font-family: 'Martel-bold';
   width: 100%;
@@ -136,10 +189,6 @@ h4 {
   }
 }
 
-/* @media  ()  {
-  
-} */
-
 @media (min-width: 800px) and (max-width: 1300px) {
   .cardContainerInner {
     height: 320px;
@@ -159,21 +208,3 @@ h4 {
     height: 350px;
   }
 }
-
-/* @media (max-width: 1000px) {
-      h3 {
-        font-size: 1px;
-        color: blue
-      }
-      h1 {
-        font-size: 1px;
-        color: blue
-      }
-      h4  {
-        font-size: 1px;
-      }
-      .sliderrr {
-        height: 100px;
-        background: blue;
-      }
-    } */

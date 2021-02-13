@@ -30,5 +30,3 @@ export default App;
 const Bg = styled.div`
   background: black
 `;
-
-//:gradients, fonts

@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import Cards from "./Cards";
 import { card1, card2, card3, card4, card5, card6, card7, card8, card9 } from "../App";
+import { NONAME } from "dns";
 
 export default function SimpleSlider({ slidesToShow }) {
 
@@ -33,11 +34,11 @@ export default function SimpleSlider({ slidesToShow }) {
 
   return (
 
-    <div className='container-full'>
+    <div className='container-full' style={{outline: 'none'}}> 
       <Slider  {...settings} className='sliderrrr'>
 
         {flashcard.map((item) =>
-          <div>
+          <div className='innerSlick' style={{outline: 'none'}}>
             <div className='cardContainer'>
               <div className='cardContainerInner'>
                 {item}

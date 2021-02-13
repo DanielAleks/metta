@@ -77,6 +77,10 @@ h3 {
   width: 100%;
 }
 
+.innerSlick {
+  outline: none !important
+}
+
 .cardContainer {
   display: flex;
   justify-content: center;

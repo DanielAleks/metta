@@ -16,7 +16,7 @@ function Section5() {
       <Gradient></Gradient>
       <GradientBot></GradientBot>
     </Align>
-  ) 
+  )
 }
 
 export default Section5
@@ -41,6 +41,7 @@ const Gradient = styled.div`
   top: 0px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 92.33%);
   transform: matrix(1, 0, 0, -1, 0, 0);
+  z-index: 1;
 `;
 
 const GradientBot = styled.div`
@@ -49,6 +50,7 @@ const GradientBot = styled.div`
   height: 428px;
   bottom: 0px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 92.33%);
+  z-index: 1
 `;
 
 const By = styled.h3`
@@ -61,5 +63,5 @@ padding: 10px 50px 0px 0px;
 const CenterText = styled.h2`
   position: absolute;
   color: #D4D4D4;
-    
+  z-index: 2  
 `;

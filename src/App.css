@@ -13,7 +13,6 @@
     width: 0px;
 }
 
-
 html {
   scrollbar-width: none;
   background: black
@@ -109,24 +108,39 @@ h3 {
   position: absolute;
   margin-top: 5%;
   color: #525252;
-  animation: .8s ease-out 0s 1 slideInFromLeft;
+  animation: slideInFromLeft .6s ease-out 1s forwards;
+  opacity: 0
+
 }
 
 .authorHeader {
   color: #616161;
   font-family: Martel-bold;
-  animation: 1s ease-out 0s 1 slideInFromLeftAuthor;
+  animation: slideInFromLeftAuthor .8s ease-out 1.3s forwards;
+  opacity: 0
 }
 
 @keyframes slideInFromLeft {
-  0% {transform: translateX(-150%) skewX(20deg);}
+  0% {
+    transform: translateX(-150%) skewX(20deg);
+    opacity: 0;
+  }
   90% {transform: translateX(1%);}
-  100% {transform: translateX(0) skewX(0deg);}
+  100% {
+    transform: translateX(0) skewX(0deg);
+    opacity: 1
+  }
 }
 @keyframes slideInFromLeftAuthor {
-  0% {transform: translateX(-150%) skewX(20deg);}
-  90% {transform: translateX(1%);}
-  100% {transform: translateX(0) skewX(0deg);}
+  0% {
+    transform: translateX(150%) skewX(-20deg);
+    opacity: 0
+  }
+  90% {transform: translateX(-1%);}
+  100% {
+    transform: translateX(0) skewX(0deg);
+    opacity: 1
+  }
 }
 
 .section2-text {
@@ -158,6 +172,9 @@ h4 {
   .headerText {
     margin-top: 25%;
     border-radius: 10px;
+  }
+  .section2-text {
+    font-size: 1rem;
   }
   h1 {
     font-size: 22px;
